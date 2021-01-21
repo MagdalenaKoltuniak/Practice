@@ -9,7 +9,7 @@ Created on Sun Nov 22 18:56:14 2020
 # 1. Write a python program to print the square of all numbers from 0 to 10
 # =============================================================================
 
-print('Exercise 1')
+print('Exercise 1\n')
 
 for number in range(0, 11):
     print(number ** 2, end = ' ')
@@ -18,7 +18,7 @@ for number in range(0, 11):
 # 2. Write a python program to find the sum of all even numbers from 0 to 10
 # =============================================================================
 
-print('\nExercise 2')
+print('\nExercise 2\n')
 
 sum_of_all_even_numbers = 0
 
@@ -33,7 +33,7 @@ print(sum_of_all_even_numbers)
 # numbers between ‘a’ and ‘b’ are divisible by ‘c’
 # =============================================================================
 
-print('\nExercise 3')
+print('\nExercise 3\n')
 
 a = int(input('Enter the number a: '))
 b = int(input('Enter the number b: '))
@@ -66,7 +66,7 @@ print('number of numbers divisible by c: ', number_of_numbers_divisible_by_c)
 # 99-----1
 # =============================================================================
 
-print('\nExercise 4')
+print('\nExercise 4\n')
 
 sum = 100
 for x in range(1, 100):
@@ -78,7 +78,7 @@ for x in range(1, 100):
 # number (hint: if ‘a’ is a string , a[::-1] will be reverse of that string)
 # =============================================================================
 
-print('\nExercise 5')
+print('\nExercise 5\n')
 
 number = int(input('Enter the number: '))
 
@@ -106,7 +106,7 @@ print(answer[::-1])
 # 192 169 0 1
 # =============================================================================
 
-print('\nExercise 6')
+print('\nExercise 6\n')
 
 print('Enter IP address: ', end = ' ')
 IP = input('')
@@ -131,7 +131,7 @@ while  number <= 5:
 # 7. Write a python program to print the factorial of a given number
 # =============================================================================
 
-print('\nExercise 7')
+print('\nExercise 7\n')
 
 number = int(input('Enter the natural number: '))
 answer = 1
@@ -154,7 +154,7 @@ print('wariant II: ', factorial(number))
 # 8. Write a python program to print the first 10 numbers Fibonacci series
 # =============================================================================
 
-print('\nExercise 8')
+print('\nExercise 8\n')
 
 number = 10
 
@@ -202,7 +202,7 @@ for item in range(number + 1):
 # * * * * *
 # =============================================================================
 
-print('\nExercise 9')
+print('\nExercise 9\n')
 
 number = int(input('Enter the natural number: '))
 
@@ -215,7 +215,7 @@ for item in range(1, number + 1):
 # 10. Write a python program to check given number is prime or not
 # =============================================================================
 
-print('\nExercise 10')
+print('\nExercise 10\n')
 
 number = int(input('Enter the natural number: '))
 
@@ -226,7 +226,7 @@ def prime(x):
         elif x == 2 or x == 3 or x == 5:
             return('prime number')
         else:
-            if x % 2 == 0 or x % 3 == 0 or x % 5 == 0:
+            if x % 2 == 0 or x % 3 == 0 or x % 5 == 0 or x % 7 == 0:
                 return('not prime number')
             else:
                 return('prime number')
@@ -240,7 +240,7 @@ print(prime(number))
 # and print how many prime numbers are there.
 # =============================================================================
 
-print('\nExercise 11')
+print('\nExercise 11\n')
 
 prime_numbers = ''
 number_of_prime_numbers = 0
@@ -259,7 +259,7 @@ print('prime numbers:', prime_numbers)
 # Output : 000 , 001 ,002, 003, 004, 0005 ,006, 007, 008, 009, 010, 011 …… 999
 # =============================================================================
 
-print('\nExercise 12')
+print('\nExercise 12\n')
 
 a, b, c = 0, 0, 0
 
