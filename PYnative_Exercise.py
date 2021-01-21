@@ -22,7 +22,7 @@ Created on Mon Oct 26 22:02:04 2020
 # 10
 # =============================================================================
 
-print('\nExercise 1')
+print('\nExercise 1\n')
 
 x = 0
 
@@ -41,7 +41,7 @@ while x <= 10:
 # 1 2 3 4 5
 # =============================================================================
 
-print('\nExercise 2')
+print('\nExercise 2\n')
 
 pattern = ''
 
@@ -57,7 +57,7 @@ for x in range(1, 6):
 # =============================================================================
 
 
-print('\nExercise 3')
+print('\nExercise 3\n')
 
 guess = int(input('Give any natural number: '))
 sum = 0
@@ -84,7 +84,7 @@ print('The sum of the numbers is:', sum)
 # =============================================================================
 
 
-print('\nExercise 4')
+print('\nExercise 4\n')
 
 num = int(input('Give any integer: '))
     
@@ -101,7 +101,7 @@ for x in range(1, 11):
 # =============================================================================
 
 
-print('\nExercise 5')
+print('\nExercise 5\n')
 
 list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
 
@@ -118,7 +118,7 @@ for item in list1:
 # =============================================================================
 
 
-print('\nExercise 6')
+print('\nExercise 6\n')
 
 num = int(input('Give any integer: '))
 ans = 0
@@ -138,6 +138,15 @@ print(ans)
 # 1
 # =============================================================================
 
+print('\nExercise 7\n')
+
+number = 5
+
+for item1 in range(0,6):
+    for item2 in range(number-item1,0,-1):
+        print(item2,end=' ')
+    print()
+
 
 # =============================================================================
 # Exercise Question 8: Reverse the following list using for loop
@@ -151,6 +160,13 @@ print(ans)
 # 20
 # 10
 # =============================================================================
+
+print('\nExercise 8\n')
+
+list1 = [10, 20, 30, 40, 50]
+
+for item in reversed(list1):
+    print(item)
 
 
 # =============================================================================
@@ -168,6 +184,11 @@ print(ans)
 # -2
 # -1
 # =============================================================================
+
+print('\nExercise 9\n')
+
+for number in range(-10, 0):
+    print(number)
 
 
 # =============================================================================
@@ -187,6 +208,11 @@ print(ans)
 # Done!
 # =============================================================================
 
+print('\nExercise 10\n')
+
+for i in range(5):
+    print(i)
+print('Done!')
 
 # =============================================================================
 # Exercise Question 11: Python program to display all the prime numbers within 
@@ -215,6 +241,16 @@ print(ans)
 # 47
 # =============================================================================
 
+print('\nExercise 11\n')
+
+start = 25
+end = 50
+
+print('Prime numbers between', start, 'and', end, 'are:')
+for i in range(start, end+1):
+    if i % 2 != 0 and i % 3 != 0 and i % 5 != 0 and i % 7 != 0:
+        print(i)
+
 
 # =============================================================================
 # Exercise Question 12: Display Fibonacci series up to 10 terms
@@ -223,6 +259,23 @@ print(ans)
 # Fibonacci sequence:
 # 0  1  1  2  3  5  8  13  21  34
 # =============================================================================
+
+print('\nExercise 12\n')
+
+a = 0
+b = 1
+
+print('Fibonacci sequence:')
+for item in range(10):
+    if item == 0:
+        print(a, end = ' ')
+    elif item == 1:
+        print(b, end = ' ')
+    else:
+        c = a + b
+        a = b
+        b = c
+        print(c, end = ' ')
 
 
 # =============================================================================
