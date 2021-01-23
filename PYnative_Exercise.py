@@ -291,6 +291,20 @@ for item in range(10):
 # 120
 # =============================================================================
 
+print('\nExercise 13\n')
+
+number = int(input('Give any integer: '))
+
+factorial = 1
+
+if number < 0:
+    print("factorial doesn't exist")
+elif number == 0:
+    print("factorial of 0 equals 1")
+else:
+    for num in range(1, number+1):
+        factorial *= num
+    print('factorial of number', number, 'is:', factorial)
 
 # =============================================================================
 # Exercise Question 14: Reverse a given integer number
@@ -302,6 +316,19 @@ for item in range(10):
 # 
 # 24567
 # =============================================================================
+
+print('\nExercise 14\n')
+
+number = int(input('Give any integer number: '))
+
+
+reverse_num = 0
+for x in range(len(str(number))):
+    R = number % 10
+    new_number = number // 10
+    reverse_num = reverse_num * 10 + R
+    number = new_number
+print('Reverse number is:', reverse_num)
 
 
 # =============================================================================
@@ -316,6 +343,17 @@ for item in range(10):
 # 20 40 60 80 100
 # =============================================================================
 
+print('\nExercise 15\n')
+
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+print('elements which are present at even positions:')
+position = 0
+
+for item in my_list:
+    if position % 2 != 0:
+        print(item, end = ' ')
+    position += 1
 
 # =============================================================================
 # Exercise Question 16: Display the cube of the number up to a given integer
@@ -333,6 +371,14 @@ for item in range(10):
 # Current Number is : 6  and the cube is 216
 # =============================================================================
 
+print('\nExercise 16\n')
+
+input_number = 6
+
+for number in range(1, input_number+1):
+    cube = number ** 3
+    print('Current Number is:', number, 'and the cube is', cube)
+
 
 # =============================================================================
 # Exercise 17: Find the sum of the series 2 +22 + 222 + 2222 + .. n terms
@@ -347,6 +393,17 @@ for item in range(10):
 # 24690
 # =============================================================================
 
+print('\nExercise 17\n')
+
+number_of_terms = 5
+
+series = 0
+sum_series = 0
+
+for number in range(number_of_terms):
+    series = series*10 + 2
+    sum_series += series
+print(sum_series)
 
 # =============================================================================
 # Exercise Question 18: Print the following pattern
@@ -360,3 +417,16 @@ for item in range(10):
 # * * 
 # *
 # =============================================================================
+
+print('\nExercise 18\n')
+
+for x in range(2):
+    if x == 0:
+        for y in range(1,6):
+            print('* ' * y)
+    else:
+        for z in range(4,0,-1):
+            print('* ' * z)
+
+
+        
