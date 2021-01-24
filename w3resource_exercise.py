@@ -10,13 +10,12 @@ Created on Sun Nov 29 23:24:21 2020
 # and multiple of 5, between 1500 and 2700 (both included).
 # =============================================================================
 
-'''
-print('\nExercise 1')
+print('\nExercise 1\n')
 
 for number in range(1500, 2701):
     if number % 7 == 0 and number % 5 == 0:
         print(number, end = ', ')
-'''
+
 
 # =============================================================================
 # 2. Write a Python program to convert temperatures to and from celsius, 
@@ -52,27 +51,25 @@ for number in range(1500, 2701):
 # * * 
 # *
 # =============================================================================
-"""
-print('\nExercise 4')
 
-ans = ' '
+print('\nExercise 4\n')
+
+
 for item1 in range(2):
     if item1 == 1:
         for item3 in range(4, 0, -1):
-            ans = ('* ') * item3
-            print(ans)
+            print('* ' * item3)
     else:
         for item2 in range(1, 6):
             if item1 == 0:
-                ans = ('* ') * item2
-                print(ans)
-"""
+                print('* ' * item2)
+
 
 # =============================================================================
 # 5. Write a Python program that accepts a word from the user and reverse it.
 # =============================================================================
-'''
-print('\nExercise 5')
+
+print('\nExercise 5\n')
 
 word = input('give a word: ')
 reverse_word = ''
@@ -80,7 +77,7 @@ reverse_word = ''
 for char in word:
     reverse_word += char
 print('reverse word is:', reverse_word[::-1])
-'''
+
 
 # =============================================================================
 # 6. Write a Python program to count the number of even and odd numbers from a 
@@ -204,6 +201,16 @@ print('reverse word is:', reverse_word[::-1])
 #  *   *
 # =============================================================================
 
+print('\nExercise 17\n')
+
+    
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row == 1 and (col == 1 or col == 5)) or row != 1 and row != 4 and col != 1 and col != 5:
+            print(' ', end = '')
+        else:
+            print('*', end = '')
+    print()
 
 # =============================================================================
 # 18. Write a Python program to print alphabet pattern 'D'.
@@ -218,6 +225,17 @@ print('reverse word is:', reverse_word[::-1])
 #  **** 
 # =============================================================================
 
+print('\nExercise 18\n')
+
+    
+for row in range(1, 8):
+    for col in range(1, 6):
+        if ((row == 1 or row == 7) and col == 5) or (row > 1 and row < 7 and 
+           col > 1 and col < 5):
+            print(' ', end = '')
+        else:
+            print('*', end = '')
+    print()
 
 # =============================================================================
 # 19. Write a Python program to print alphabet pattern 'E'.
@@ -232,6 +250,15 @@ print('reverse word is:', reverse_word[::-1])
 #  *****
 # =============================================================================
 
+print('\nExercise 19\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row != 1 and row != 4 and row != 7 and col > 1) or (row == 4 and col == 5):
+            print(' ', end = '')
+        else:
+            print('*', end = '')
+    print()
 
 # =============================================================================
 # 20. Write a Python program to print alphabet pattern 'G'.
@@ -246,6 +273,17 @@ print('reverse word is:', reverse_word[::-1])
 #   *** 
 # =============================================================================
 
+print('\nExercise 20\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row == 3 and col == 1) or (row == 4 and (col == 1 or col > 2)) or ((row == 1 
+           or row == 7) and (col >= 2 and col < 5)) or ((row == 2 or row == 5 or 
+                            row == 6) and (col == 1 or col == 5)):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 21. Write a Python program to print alphabet pattern 'L'.
@@ -260,6 +298,15 @@ print('reverse word is:', reverse_word[::-1])
 #  *****
 # =============================================================================
 
+print('\nExercise 21\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row < 7 and col == 1) or (row == 7 and col >= 1):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 22. Write a Python program to print alphabet pattern 'M'.
@@ -274,6 +321,16 @@ print('reverse word is:', reverse_word[::-1])
 #   *       *
 # =============================================================================
 
+print('\nExercise 22\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row != 3 and row != 4 and (col == 1 or col == 5)) or (row == 3 and 
+           col != 3) or (row == 4 and col != 2 and col != 4):
+            print('* ', end = '')
+        else:
+            print('  ', end = '')
+    print()
 
 # =============================================================================
 # 23. Write a Python program to print alphabet pattern 'O'.
@@ -288,6 +345,16 @@ print('reverse word is:', reverse_word[::-1])
 #   *** 
 # =============================================================================
 
+print('\nExercise 23\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if ((row == 1 or row == 7) and col != 1 and col != 5) or (row > 1 and 
+           row < 7 and (col == 1 or col == 5)):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 24. Write a Python program to print alphabet pattern 'P'.
@@ -302,6 +369,16 @@ print('reverse word is:', reverse_word[::-1])
 #  *  
 # =============================================================================
 
+print('\nExercise 24\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if ((row == 1 or row == 4) and col != 5) or ((row == 2 or row == 3) and 
+            (col == 1 or col == 5)) or (row > 4 and col == 1):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 25. Write a Python program to print alphabet pattern 'R'.
@@ -316,6 +393,17 @@ print('reverse word is:', reverse_word[::-1])
 #  *   *
 # =============================================================================
 
+print('\nExercise 25\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if ((row == 1 or row == 4) and col != 5) or ((row == 2 or row == 3) and 
+            (col == 1 or col == 5)) or (row == 5 and (col == 1 or col == 3)) or (row == 6 
+            and (col == 1 or col == 4)) or (row == 7 and (col == 1 or col == 5)):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 26. Write a Python program to print the following patterns.
@@ -359,6 +447,15 @@ print('reverse word is:', reverse_word[::-1])
 #    *  
 # =============================================================================
 
+print('\nExercise 27\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row == 1 and col >= 1) or (row > 1 and col == 3):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 28. Write a Python program to print alphabet pattern 'U'.
@@ -373,6 +470,15 @@ print('reverse word is:', reverse_word[::-1])
 #   *** 
 # =============================================================================
 
+print('\nExercise 28\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if (row == 7 and col != 1 and col != 5) or (row < 7 and (col == 1 or col == 5)):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 29. Write a Python program to print alphabet pattern 'X'.
@@ -387,6 +493,16 @@ print('reverse word is:', reverse_word[::-1])
 #  *   *
 # =============================================================================
 
+print('\nExercise 29\n')
+
+for row in range(1, 8):
+    for col in range(1, 6):
+        if ((row < 3 or row > 5) and (col == 1 or col == 5)) or (row == 4 and 
+           col == 3) or ((row == 3 or row == 5) and (col == 2 or col == 4)):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 30. Write a Python program to print alphabet pattern 'Z'.
@@ -401,6 +517,17 @@ print('reverse word is:', reverse_word[::-1])
 # *******
 # =============================================================================
 
+print('\nExercise 30\n')
+
+for row in range(1, 8):
+    for col in range(1, 8):
+        if ((row == 1 or row == 7) and col >=1) or (row == 2 and col == 6) or (row == 3 
+           and col == 5) or (row == 4 and col == 4) or (row == 5 and 
+                            col == 3) or (row == 6 and col == 2):
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
 
 # =============================================================================
 # 31. Write a Python program to calculate a dog's age in dog's years.
@@ -508,7 +635,7 @@ print('reverse word is:', reverse_word[::-1])
 # The median is 26.0   
 # =============================================================================
 '''
-print('\nExercise 40')
+print('\nExercise 40\n')
 
 first_number = int(input('Input first number: '))
 second_number = int(input('Input second number: '))
@@ -550,14 +677,14 @@ third_number = int(input('Input third number: '))
 # 6 x 9 = 54                                                              
 # 6 x 10 = 60 
 # =============================================================================
-'''
-print('\nExercise 43')
+
+print('\nExercise 43\n')
 
 number = int(input('give a number from 1 to 10: '))
 
 for item in range(1, 11):
     print(number, 'x', item, '=', number*item)
-'''
+
 # =============================================================================
 # 44. Write a Python program to construct the following pattern, using a 
 # nested loop number.
@@ -573,3 +700,10 @@ for item in range(1, 11):
 # 88888888
 # 999999999
 # =============================================================================
+
+print('\nExercise 44\n')
+
+
+for num in range(1, 10):
+    print(str(num)*num)
+
